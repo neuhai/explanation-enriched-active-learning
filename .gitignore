@@ -1,0 +1,5 @@
+all-MiniLM-L6-v2
+*_model
+*_model_data
+*.zip
+__pycache__

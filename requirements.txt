@@ -1,0 +1,6 @@
+datasets==2.13.0
+sentence_transformers==2.2.2
+torch==1.13.1
+tqdm==4.65.0
+transformers==4.30.2
+accelerate==0.20.3
