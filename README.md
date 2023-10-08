@@ -23,7 +23,7 @@ We highly suggest running the code with GPU to reduce the experiment time.
 1. Install dependencies   
 ```bash
 # clone project   
-git clone https://github.com/leoleoasd/dual_model_active_learning
+git clone https://github.com/neuhai/dual_model_active_learning
 
 # install project   
 cd dual_model_active_learning
