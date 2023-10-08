@@ -16,10 +16,6 @@ We conduct AL Simulation experiment on the e-SNLI dataset and provide code to re
 
 We highly suggest running the code with GPU to reduce the experiment time. 
 
-## To-do
-
-- [ ] Parameterize hyperparameters for easier command-line usage
-
 ## How to run   
 
 0. (optional) Create a conda env for this project
@@ -33,11 +29,24 @@ git clone https://github.com/leoleoasd/dual_model_active_learning
 cd dual_model_active_learning
 pip install -r requirements.txt
  ```
-2. Edit hyper-parameters and settings in ```main.py```
 
-3. navigate to any file and run it.   
+2. run experiment
  ```bash
-python main.py
+python main.py --criteria uncertainty_rationale
 ```
 
+```
+usage: main.py [-h] [--num_iter NUM_ITER] [--num_data_per_batch NUM_DATA_PER_BATCH] [--num_epochs_rg NUM_EPOCHS_RG] [--num_epochs_p NUM_EPOCHS_P] [--learning_rate LEARNING_RATE]
+               [--per_device_batch_size PER_DEVICE_BATCH_SIZE] [--criteria {random,even,even_rationale,uncertainty,uncertainty_rationale}]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --num_iter NUM_ITER
+  --num_data_per_batch NUM_DATA_PER_BATCH
+  --num_epochs_rg NUM_EPOCHS_RG
+  --num_epochs_p NUM_EPOCHS_P
+  --learning_rate LEARNING_RATE
+  --per_device_batch_size PER_DEVICE_BATCH_SIZE
+  --criteria {random,even,even_rationale,uncertainty,uncertainty_rationale}
+```
 
