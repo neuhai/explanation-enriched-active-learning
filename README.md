@@ -10,7 +10,7 @@ Conference
 </div>
  
 ## Overview   
-We propose a novel Active Learning (AL) architecture to support and reduce human annotations of both labels and explanations in low-resource scenarios. Our AL architecture incorporates an explanation-generation model that can explicitly generate natural language explanations for the prediction model and for assisting humans' decision-making in real-world. For our AL framework, we design a data diversity-based AL data selection strategy that leverages the explanation annotations.
+We propose a novel Active Learning (AL) architecture to support and reduce human annotations of both labels and explanations in low-resource scenarios. Our AL architecture incorporates an explanation-generation model that can explicitly generate natural language explanations for the prediction model and for assisting humans' decision-making in real-world. For our AL framework, we design a data diversity-based AL data selection strategy that leverages the explanation annotations. Our work is accepted to emnlp findings 2023. Our paper is available at [arXiv](https://arxiv.org/abs/2305.12710).
 
 We conduct AL Simulation experiment on the e-SNLI dataset and provide code to reproduce the results. Currently, all the experiment hyper-parameters can be edited from ```main.py```, including the selection of AL data selector.
 
@@ -50,3 +50,22 @@ optional arguments:
   --criteria {random,even,even_rationale,uncertainty,uncertainty_rationale}
 ```
 
+## Cite our work
+
+```
+@misc{yaoLabelsEmpoweringHuman2023,
+  title = {Beyond {{Labels}}: {{Empowering Human}} with {{Natural Language Explanations}} through a {{Novel Active-Learning Architecture}}},
+  shorttitle = {Beyond {{Labels}}},
+  author = {Yao, Bingsheng and Jindal, Ishan and Popa, Lucian and Katsis, Yannis and Ghosh, Sayan and He, Lihong and Lu, Yuxuan and Srivastava, Shashank and Hendler, James and Wang, Dakuo},
+  year = {2023},
+  month = may,
+  number = {arXiv:2305.12710},
+  eprint = {2305.12710},
+  primaryclass = {cs},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.2305.12710},
+  urldate = {2023-10-08},
+  archiveprefix = {arxiv},
+  keywords = {Computer Science - Computation and Language},
+}
+```
